@@ -1,36 +1,26 @@
 # Time-Series Stock Movement Classification: Simple and Ensemble Model Comparisons
-Repository featuring code and comprehensive report for time-series analysis of real-time stock data, aligned with the study 'Comparative Analysis of Individual and Ensemble Machine Learning Models for Classifying Time-Series Stock Movement Direction'
 
+This repository features code and the final report for time-series analysis of real-time stock data. This study was conducted as part of the final project that had to be delivered for the CS613: Intro to ML class at Drexel University. We attempted to compare different machine learning models and ensemble some of them to analyze which model was the best for predicting whether the stock price will go up or down in the next timestep
 
-This project is a part of the [Data Science Working Group](http://datascience.codeforsanfrancisco.org) at [Code for San Francisco](http://www.codeforsanfrancisco.org).  Other DSWG projects can be found at the [main GitHub repo](https://github.com/sfbrigade/data-science-wg).
-
-#### -- Project Status: [Active, On-Hold, Completed]
+Status: <font color="green"> Completed </font>
 
 ## Project Intro/Objective
-The purpose of this project is ________. (Describe the main goals of the project and potential civic impact. Limit to a short paragraph, 3-6 Sentences)
+The project aimed to leverage real-time time-series stock market data to forecast stock movement in upcoming time intervals. We conducted a comprehensive analysis, comparing various machine learning models and exploring ensemble techniques to assess their accuracy in predicting stock direction. Diverging from conventional literature, which predominantly focused on inter-day intervals, our research delved into intra-day analysis, utilizing two months of 5-minute interval data for each stock. This study holds significance due to the profound influence of stock markets on society, with American stock market capitalization surpassing 45.5 trillion dollars in 2023, impacting global equity markets significantly. Our objective was to develop a more accurate method for stock price prediction, aligning with the needs of a substantial portion of the population invested in the stock market
 
-### Partner
-* [Name of Partner organization/Government department etc..]
-* Website for partner
-* Partner contact: [Name of Contact], [slack handle of contact if any]
-* If you do not have a partner leave this section out
-
-### Methods Used
-* Inferential Statistics
-* Machine Learning
-* Data Visualization
-* Predictive Modeling
-* etc.
+### Methods Used  
+* Intra-day Analysis: The project focused on analyzing intra-day intervals of 5 minutes, providing insights into stock market behavior at a finer temporal resolution
+  
+* Sector-Agnostic Approach: Instead of focusing on specific sectors, the study considered 66 stocks across all 11 sectors of the S&P 500, aiming to develop versatile models applicable to a wide range of stocks
+* Understandable Machine Learning: In contrast to the prevalent use of complex and less interpretable models, this project prioritized the adoption of straightforward and transparent models, including Multiple Linear Regression, Logistic Regression, Linear Discriminant Analysis (LDA), Naive Bayes, and Decision Tree Learning. This choice aimed to underscore their proficiency in addressing high-frequency trading scenarios
+* Ensemble Learning: Ensemble learning techniques were applied, incorporating weighted voting systems and RandomForest Classifiers, to enhance predictive accuracy
+* Random Temporal Windows: Stock data was arranged by random days instead of chronologically to introduce necessary variability
+* Data-Driven Model Selection: The research emphasized the importance of selecting the right model based on data characteristics, highlighting the impact of temporal resolution and the advantage of training models collectively on a diverse stock dataset.
 
 ### Technologies
-* R 
 * Python
-* D3
-* PostGres, MySql
-* Pandas, jupyter
-* HTML
-* JavaScript
-* etc. 
+* Jupyter
+* Pandas, Numpy
+* Conda
 
 ## Project Description
 (Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
